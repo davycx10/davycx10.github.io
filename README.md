@@ -1,22 +1,24 @@
 # davycx10.github.io
 
 Bonjour !
-Je suis actuellement étudiant en BTS SIO (SLAM/SISR) en alternance. J’ai choisi ce cursus parce que j’aime l’informatique et que je souhaite travailler dans le développement objet, les systèmes embarqués ou le développement web.
+Je suis actuellement étudiant en BTS SIO (SLAM/SISR) en alternance. J’ai choisi ce cursus parce que j’aime l’informatique et que je souhaite travailler dans le développement objet, les systèmes embarqués ou le développement cloud.
 
 J’ai réalisé ce portfolio dans le cadre d’une épreuve, pour présenter mes compétences et mes réalisations. Voici comment il est structuré :
 
-Page Intro / About : je me présente et explique mon parcours
+Accueil / Intro → page personnelle, qui tu es, ton parcours.
 
-BTS SIO : page principale avec deux sous-pages
+BTS SIO → page principale avec deux sous-onglets :
 
-Option SLAM : tout ce que j’ai appris et réalisé en développement d’applications
+Option SLAM → explication de ce que c’est, à quoi ça sert, debouché possible
 
-Option SISR : tout ce que j’ai appris et réalisé en systèmes et réseaux
+Option SISR → explication de ce que c’est, à quoi ça sert, debouché possible
 
-Projets : huit projets que j’ai développés ou auxquels j’ai participé, avec images et descriptions
+Entreprise → ce que je fais en alternance, missions, projets.
 
-Veille technologique : mes recherches et expérimentations sur des technologies nouvelles
+Projets → mes projets (8 cartes, images, description).
 
-Contact : mes coordonnées pour me joindre
+Veille technologique → recherches et expérimentations.
+
+Contact → coordonnées et moyens de me joindre.
 
 J’ai construit ce portfolio avec HTML, CSS, JavaScript et Materialize, pour que tout soit clair, responsive et facile à parcourir
