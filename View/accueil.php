@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="style/accueil.css">
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Bonjour et bienvenue sur mon portfolio !</h2>
+
+      <p>
+        Actuellement en deuxième année de BTS Services Informatiques aux Organisations en alternance, je suis passionné par le monde de l’informatique et plus particulièrement par le développement d’applications. Ce parcours me permet de consolider mes compétences tout en acquérant une expérience concrète en entreprise.
+      </p>
+        
+        <p>
+        Je m’intéresse particulièrement à la programmation Python et au développement orienté objet, notamment à travers des projets IoT que je réalise pour apprendre à maîtriser les spécificités du développement embarqué. Ces expériences me permettent d’acquérir une vision concrète et technique du développement logiciel.
+        
+        </p>
+
+        <p>
+            C’est pourquoi je souhaite poursuivre mon parcours jusqu’au niveau master, 
+            afin d’approfondir mes connaissances et d’explorer différents domaines du développement que ce soit les jeux vidéo, le développement embarqué, la data, l’intelligence artificielle ou le développement mobile. Cette formation me permettra d’élargir mes perspectives professionnelles et de trouver ma voie à travers des projets variés.
+        </p>
+
+        <p>
+            Je vous invite à découvrir, à travers ce portfolio, mes réalisations qui témoignent de mon engagement et de ma passion pour le développement informatique, ainsi que de mon expérience professionnelle acquise en alternance.
+        </p>
+
+    </div>
+    <div class="col-md-6">
+      <img src="images/photo.png" alt="Image exemple" class="img-fluid">
+    </div>
+  </div>
+</div>

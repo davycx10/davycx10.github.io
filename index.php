@@ -9,9 +9,26 @@ switch($page){
         include('View/accueil.php');
         break;
         
-    case 'accueil':
-        include('View/accueil.php');
+    case 'BTS SIO':
+        include('View/bts_sio.php');
         break;
+
+    case 'Entreprise':
+        include('View/entreprise.php');
+        break;
+
+    case 'Projets':
+        include('View/projets.php');
+        break;
+
+    case 'Vieille techno':
+        include('View/vieille_techno.php');
+        break;
+
+    case 'Contact':
+        include('View/contact.php');
+        break;
+
 
 
     default:

@@ -1,0 +1,14 @@
+.container{
+    padding-top: 2rem;
+}
+
+.container h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #0A84AE;
+}
+
+.container p {
+    color: #1C1C1C;
+    font-size: 20px;
+}
