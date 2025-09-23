@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style/header.css">
+</head>
+<body>
+  <!-- Ces div seront remplis automatiquement par le JavaScript -->
+  <div id="header"></div>
+  <main id="content"></main>
+  <div id="footer"></div>
+
+  <script>
+    // Fonction pour inclure du HTML dans une section (header, footer, content)
+    function loadHTML(url, targetId) {
+      fetch(url)
+        .then(res => {
+          if (!res.ok) throw new Error(`Erreur 404 : ${url} introuvable`);
+          return res.text();
+        })
+        .then(html => {
+          document.getElementById(targetId).innerHTML = html;
+        })
+        .catch(err => {
+          document.getElementById(targetId).innerHTML = `<p>${err.message}</p>`;
+        });
+    }
+
+    // Fonction pour charger dynamiquement la bonne page
+    function loadPage() {
+      const params = new URLSearchParams(window.location.search);
+      const page = params.get("page") || "accueil";
+
+      // Liste des pages autorisées (tu peux en ajouter ici)
+      const allowedPages = [
+        "accueil",
+        "BTS SIO",
+        "Entreprise",
+        "Projets",
+        "Vieille techno",
+        "Contact"
+      ];
+
+      const safePage = allowedPages.includes(page) ? page : "accueil";
+      const filePath = `View/${safePage.toLowerCase().replace(/ /g, '_')}.html`;
+
+      loadHTML(filePath, "content");
+    }
+
+    // Exécution automatique au chargement
+    loadHTML("View/commun/header.html", "header");
+    loadPage();
+    loadHTML("View/commun/footer.html", "footer");
+  </script>
+</body>
+</html>
