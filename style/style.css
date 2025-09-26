@@ -1,0 +1,20 @@
+/* Appliquer flexbox sur le body pour aligner le contenu verticalement */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main prend toute la hauteur restante entre le header et le footer */
+main {
+  flex: 1;
+}
+
+/* Footer peut être stylisé comme tu veux, mais il reste en bas */
+/* footer {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
+} */
