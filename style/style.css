@@ -10,7 +10,7 @@ html, body {
 /* Main prend toute la hauteur restante entre le header et le footer */
 main {
   flex: 1;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
 }
 
 /* Footer peut être stylisé comme tu veux, mais il reste en bas */
