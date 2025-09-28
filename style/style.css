@@ -21,3 +21,9 @@ main {
   padding: 1rem;
   text-align: center;
 } */
+
+
+  /* Supprimer le scroll horizontal */
+  body {
+    overflow-x: hidden;
+  }
