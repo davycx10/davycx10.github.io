@@ -13,12 +13,17 @@
 
       <div class="mb-3">
         <label for="phone" class="form-label">Numéro de téléphone</label>
-        <input type="tel" name="phone" class="form-control" id="phone" placeholder="Votre numéro de téléphone" pattern="^(\+33|0)[1-9](\d{2}){4}$" required>
+        <input type="tel" name="phone" class="form-control" id="phone" placeholder="Votre numéro de téléphone" pattern="^(\+33|0)[1-9](\s?\d{2}){4}$" required>
       </div>
 
       <div class="mb-3">
         <label for="email" class="form-label">Adresse e-mail</label>
         <input type="email" name="email" class="form-control" id="email" placeholder="Votre adresse email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="subject" class="form-label">Entreprise</label>
+        <input type="text" name="subject" class="form-control" id="subject" placeholder="Le nom de votre entreprise...">
       </div>
 
       <div class="mb-3">
