@@ -1,0 +1,10 @@
+.btn-outline-primary {
+  --bs-btn-color: #89A7B1 !important;
+  --bs-btn-border-color: #89A7B1 !important;
+  --bs-btn-hover-bg: #89A7B1 !important;
+  --bs-btn-hover-border-color: #89A7B1 !important;
+  --bs-btn-hover-color: #fff !important;
+  --bs-btn-active-bg: #89A7B1 !important;
+  --bs-btn-active-border-color: #89A7B1 !important;
+  --bs-btn-active-color: #fff !important;
+}
