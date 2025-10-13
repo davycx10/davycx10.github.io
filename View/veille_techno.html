@@ -20,12 +20,14 @@
         </p>
       </div>
         <div class="ratio ratio-16x9 rounded-4 shadow">
-          <iframe 
-            src="https://www.youtube.com/watch?v=j31ISEd8xRM" 
-            title="Minecraft with RTX"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
+            <iframe 
+            width="560" height="315" 
+            src="https://www.youtube.com/embed/j31ISEd8xRM?si=LAwiXkeXm4lAVIaM" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+            </iframe>
         </div>
     </div>
   </section>
@@ -62,13 +64,17 @@
   </section>
 
   <!-- 🎯 Veille dynamique via API NewsAPI -->
-  <section class="mb-5">
-    <h2 class="fw-semibold mb-4" data-aos="fade-up"><i class="bi bi-newspaper me-2"></i> Actualités récentes sur le Ray Tracing</h2>
-    <div class="row" id="news-container">
-      <!-- Articles dynamiques ajoutés ici -->
-      <p class="text-muted">Chargement des actualités...</p>
-    </div>
-  </section>
+    <section class="mb-5">
+      <h2 class="fw-semibold mb-4" data-aos="fade-up">
+        <i class="bi bi-newspaper me-2"></i> Actualités récentes sur le Ray Tracing
+      </h2>
+      <div class="row" id="news-container">
+        <!-- Articles dynamiques ajoutés ici -->
+        <p class="text-muted">Chargement des actualités...</p>
+      </div>
+    </section>
+
+    <script src="Models/rss.js"></script>
 
   <!-- 🧰 Outils de veille utilisés -->
   <section class="mb-5">
@@ -77,7 +83,7 @@
       <li class="list-group-item">📰 <strong>Feedly</strong> — Pour suivre les blogs et sites tech</li>
       <li class="list-group-item">📺 <strong>YouTube</strong> — Chaînes comme Digital Foundry, Hardware Unboxed</li>
       <li class="list-group-item">📚 <strong>Docs officielles</strong> — NVIDIA Developer, Unreal Engine, AMD GPUOpen</li>
-      <li class="list-group-item">📡 <strong>NewsAPI</strong> — Pour intégrer dynamiquement les dernières actualités</li>
+      <li class="list-group-item">📡 <strong>talkwalker</strong> — Pour intégrer dynamiquement les dernières actualités</li>
     </ul>
   </section>
 
@@ -91,41 +97,3 @@
     </div>
   </section>
 </div>
-
-<!-- 🔁 Remplace le script NewsAPI par ce script RSS -->
-<script>
-  const RSS_URL = 'https://alerts.talkwalker.com/alerts/rss/CGS5EZ5FWXFWV5MZ4KZJ3RVDTXCKM57JHSQDYXLBNHM4FRUA75UBPAOGQGUFLRGSTLN47VF3N7TTC83'; // ← remplace avec ton vrai lien RSS
-  const newsContainer = document.getElementById('news-container');
-
-  const rss2jsonURL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS_URL)}`;
-
-  fetch(rss2jsonURL)
-    .then(res => res.json())
-    .then(data => {
-      if (!data.items || data.items.length === 0) {
-        newsContainer.innerHTML = `<p class="text-muted">Aucun article pour le moment. Essaie plus tard ou modifie ta requête Talkwalker.</p>`;
-        return;
-      }
-
-      newsContainer.innerHTML = ''; // Clear "chargement..."
-
-      data.items.slice(0, 4).forEach(article => {
-        const col = document.createElement('div');
-        col.className = 'col-md-6 mb-4';
-        col.innerHTML = `
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">${article.title}</h5>
-              <p class="card-text">${article.description || ''}</p>
-              <a href="${article.link}" target="_blank" class="btn btn-outline-primary btn-sm">Lire l'article</a>
-            </div>
-          </div>
-        `;
-        newsContainer.appendChild(col);
-      });
-    })
-    .catch(error => {
-      console.error("Erreur lors du chargement du flux RSS :", error);
-      newsContainer.innerHTML = `<p class="text-danger">Erreur lors du chargement des articles RSS.</p>`;
-    });
-</script>
