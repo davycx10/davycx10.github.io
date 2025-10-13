@@ -1,53 +1,131 @@
+<!-- 🔗 Bootstrap & Bootstrap Icons (CDN) -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"> -->
+
+<div class="container py-5">
   <!-- En-tête -->
-    <div data-aos="fade-up" data-aos-delay="250" class="container my-4">
-        <div class="text-center">
-            <h1 data-aos="fade-right" data-aos-delay="250" class="display-5">Veille Technologique</h1>
-            <p class="lead">Le Ray Tracing en temps réel dans les jeux vidéo</p>
-        </div>
-    </div>
+  <div class="text-center mb-5" data-aos="fade-up">
+    <h1 class="display-4 fw-bold">🔍 Veille Technologique</h1>
+    <p class="lead text-muted">Suivi et évolution du <strong>Ray Tracing en temps réel</strong> dans les jeux vidéo</p>
+  </div>
 
-    <!-- Introduction -->
-    <div data-aos="fade-up" data-aos-delay="250" class="container mb-4">
-        <div class="bg-light p-4 rounded shadow-sm">
-            <h2 data-aos="fade-left" data-aos-delay="250">Qu'est-ce que le Ray Tracing ?</h2>
-            <p data-aos="fade-right" data-aos-delay="250">
-                Le Ray Tracing (ou lancer de rayons) est une technique de rendu qui simule le comportement réel de la lumière.
-                Grâce à elle, les jeux vidéo peuvent afficher des reflets, ombres et lumières beaucoup plus réalistes.
-                Cette technologie était autrefois réservée au cinéma, mais elle est maintenant disponible en temps réel grâce aux cartes graphiques modernes (NVIDIA RTX, AMD RDNA 2).
-            </p>
+  <!-- Présentation -->
+  <section class="mb-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-6" data-aos="fade-right">
+        <h2 class="fw-semibold mb-3">⚡ Qu'est-ce que le Ray Tracing ?</h2>
+        <p>
+          Le Ray Tracing est une technologie de rendu qui simule le comportement réel de la lumière pour produire des effets visuels ultra-réalistes (reflets, ombres, lumière).
+          D'abord utilisé dans le cinéma, il est aujourd’hui intégré dans les moteurs de jeu grâce aux cartes graphiques comme les <strong>NVIDIA RTX</strong> ou <strong>AMD RDNA 2+</strong>.
+        </p>
+      </div>
+        <div class="ratio ratio-16x9 rounded-4 shadow">
+          <iframe 
+            src="https://www.youtube.com/watch?v=lddNGCucEMY&list=PL6fFVy4icRcJsQb0jYj98-hfkBtdzBaHi" 
+            title="Minecraft with RTX"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
         </div>
     </div>
+  </section>
 
-    <!-- Avantages -->
-    <div data-aos="fade-up" data-aos-delay="250" class="container mb-4">
-        <div class="bg-white p-4 rounded shadow-sm border">
-            <h2 data-aos="fade-right" data-aos-delay="250">Avantages</h2>
-            <ul data-aos="fade-left" data-aos-delay="250">
-                <li>Reflets et ombres ultra-réalistes</li>
-                <li>Meilleure immersion visuelle</li>
-                <li>Utilisé dans les jeux récents comme Cyberpunk 2077, Minecraft RTX, etc.</li>
-            </ul>
-        </div>
+  <!-- Avantages et limites -->
+  <section class="row g-4 mb-5">
+    <div class="col-md-6" data-aos="fade-up">
+      <div class="bg-light p-4 rounded shadow-sm h-100">
+        <h3 class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> Avantages</h3>
+        <ul class="mb-0">
+          <li>Reflets et ombres dynamiques et réalistes</li>
+          <li>Meilleure immersion et fidélité visuelle</li>
+          <li>Standard dans les jeux AAA récents</li>
+        </ul>
+      </div>
     </div>
+    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+      <div class="bg-white p-4 rounded shadow-sm border h-100">
+        <h3 class="mb-3"><i class="bi bi-exclamation-triangle-fill text-warning me-2"></i> Limites</h3>
+        <p>Le Ray Tracing est exigeant en ressources. Il nécessite des GPU puissants et peut impacter fortement les performances, même avec des technologies comme le DLSS.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Limitations -->
-    <div data-aos="fade-up" data-aos-delay="250" class="container mb-4">
-        <div class="bg-light p-4 rounded shadow-sm">
-            <h2 data-aos="fade-left" data-aos-delay="250">Limites et contraintes</h2>
-            <p data-aos="fade-right" data-aos-delay="250">
-                Le Ray Tracing est très gourmand en ressources. Il nécessite des cartes graphiques puissantes et peut faire chuter les performances.
-                C'est pourquoi de nombreux jeux proposent un mode "hybride", mélangeant Ray Tracing et techniques classiques.
-            </p>
-        </div>
-    </div>
+  <!-- Ligne du temps -->
+  <section class="mb-5">
+    <h2 class="fw-semibold mb-4" data-aos="fade-up"><i class="bi bi-clock-history me-2"></i> Évolution du Ray Tracing</h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" data-aos="fade-up"><strong>2018 :</strong> NVIDIA lance les RTX 20xx avec Ray Tracing matériel.</li>
+      <li class="list-group-item" data-aos="fade-up"><strong>2020 :</strong> Minecraft RTX montre le Ray Tracing temps réel.</li>
+      <li class="list-group-item" data-aos="fade-up"><strong>2022 :</strong> Unreal Engine 5 intègre Lumen pour du RT hybride.</li>
+      <li class="list-group-item" data-aos="fade-up"><strong>2023-2024 :</strong> DLSS 3.5 avec Ray Reconstruction pour un rendu plus fluide.</li>
+    </ul>
+  </section>
 
-    <!-- Conclusion -->
-    <div data-aos="fade-up" data-aos-delay="250" class="container mb-4">
-        <div class="bg-white p-4 rounded shadow-sm border">
-            <h2>Conclusion</h2>
-            <p data-aos="fade-left" data-aos-delay="250">
-                Le Ray Tracing représente une avancée majeure dans le rendu graphique des jeux vidéo. 
-                Bien qu’il soit encore en pleine évolution, son intégration croissante dans les moteurs de jeu (comme Unreal Engine ou Unity) montre qu’il est là pour rester.
-            </p>
-        </div>
+  <!-- 🎯 Veille dynamique via API NewsAPI -->
+  <section class="mb-5">
+    <h2 class="fw-semibold mb-4" data-aos="fade-up"><i class="bi bi-newspaper me-2"></i> Actualités récentes sur le Ray Tracing</h2>
+    <div class="row" id="news-container">
+      <!-- Articles dynamiques ajoutés ici -->
+      <p class="text-muted">Chargement des actualités...</p>
     </div>
+  </section>
+
+  <!-- 🧰 Outils de veille utilisés -->
+  <section class="mb-5">
+    <h2 class="fw-semibold mb-4" data-aos="fade-up"><i class="bi bi-tools me-2"></i> Outils que j’utilise pour ma veille</h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">📰 <strong>Feedly</strong> — Pour suivre les blogs et sites tech</li>
+      <li class="list-group-item">📺 <strong>YouTube</strong> — Chaînes comme Digital Foundry, Hardware Unboxed</li>
+      <li class="list-group-item">📚 <strong>Docs officielles</strong> — NVIDIA Developer, Unreal Engine, AMD GPUOpen</li>
+      <li class="list-group-item">📡 <strong>NewsAPI</strong> — Pour intégrer dynamiquement les dernières actualités</li>
+    </ul>
+  </section>
+
+  <!-- 🧠 Conclusion -->
+  <section class="mb-5">
+    <div class="bg-white border p-4 rounded shadow-sm" data-aos="fade-up">
+      <h3 class="mb-3">🧠 Conclusion</h3>
+      <p>
+        Le Ray Tracing continue de redéfinir les standards visuels du jeu vidéo. Grâce à une veille technologique active, je reste informé des dernières avancées dans ce domaine et dans l’univers du développement graphique en général.
+      </p>
+    </div>
+  </section>
+</div>
+
+<!-- 🔁 Remplace le script NewsAPI par ce script RSS -->
+<script>
+  const RSS_URL = 'https://alerts.talkwalker.com/alerts/rss/CGS5EZ5FWXFWV5MZ4KZJ3RVDTXCKM57JHSQDYXLBNHM4FRUA75UBPAOGQGUFLRGSTLN47VF3N7TTC83'; // ← remplace avec ton vrai lien RSS
+  const newsContainer = document.getElementById('news-container');
+
+  const rss2jsonURL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS_URL)}`;
+
+  fetch(rss2jsonURL)
+    .then(res => res.json())
+    .then(data => {
+      if (!data.items || data.items.length === 0) {
+        newsContainer.innerHTML = `<p class="text-muted">Aucun article pour le moment. Essaie plus tard ou modifie ta requête Talkwalker.</p>`;
+        return;
+      }
+
+      newsContainer.innerHTML = ''; // Clear "chargement..."
+
+      data.items.slice(0, 4).forEach(article => {
+        const col = document.createElement('div');
+        col.className = 'col-md-6 mb-4';
+        col.innerHTML = `
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">${article.title}</h5>
+              <p class="card-text">${article.description || ''}</p>
+              <a href="${article.link}" target="_blank" class="btn btn-outline-primary btn-sm">Lire l'article</a>
+            </div>
+          </div>
+        `;
+        newsContainer.appendChild(col);
+      });
+    })
+    .catch(error => {
+      console.error("Erreur lors du chargement du flux RSS :", error);
+      newsContainer.innerHTML = `<p class="text-danger">Erreur lors du chargement des articles RSS.</p>`;
+    });
+</script>
