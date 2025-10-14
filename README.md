@@ -1,62 +1,119 @@
-# davycx10.github.io
+# 📁 Structure du Projet Portfolio
 
-Bonjour !
-Je suis actuellement étudiant en BTS SIO (SLAM/SISR) en alternance. J’ai choisi ce cursus parce que j’aime l’informatique et que je souhaite travailler dans le développement objet, les systèmes embarqués ou le développement cloud.
+Ce projet est une application web simple servant de **portfolio personnel**. Il a été pensé pour être **modulaire**, lisible et facilement maintenable, en s'inspirant librement de l’architecture **MVC** (Modèle-Vue-Contrôleur), bien que seuls les **Vues (View)** soient réellement utilisées. Les **Controllers** et **Models** sont présents mais vides ou inutiles, et seront supprimés à terme.
 
-J’ai réalisé ce portfolio dans le cadre d’une épreuve, pour présenter mes compétences et mes réalisations. Voici comment il est structuré :
+---
 
-Accueil / Intro → page personnelle, qui tu es, ton parcours.
+## 🔧 Technologies utilisées
 
-BTS SIO → page principale avec deux sous-onglets :
+* **HTML5 / CSS3**
+* **JavaScript** (chargement dynamique des vues)
+* **[Bootstrap 5.3](https://getbootstrap.com/)** pour la mise en page responsive
+* **[Font Awesome](https://fontawesome.com/)** et **Bootstrap Icons** pour les icônes
+* **[AOS (Animate On Scroll)](https://michalsnik.github.io/aos/)** pour les animations lors du scroll
 
-Option SLAM → explication de ce que c’est, à quoi ça sert, debouché possible
+---
 
-Option SISR → explication de ce que c’est, à quoi ça sert, debouché possible
+## 🗂️ Arborescence du projet
 
-Entreprise → ce que je fais en alternance, missions, projets.
+```
+├── Controller/                 # (Inutile pour l’instant, sera supprimé)
+├── Models/                    # (Inutile également, sera supprimé)
+├── View/                      # Contient toutes les pages HTML du site
+│   ├── commun/
+│   │   ├── header.html        # Barre de navigation dynamique
+│   │   └── footer.html        # Pied de page avec liens externes
+│   ├── accueil.html           # Page d’accueil
+│   ├── bts_sio.html           # Présentation du BTS SIO
+│   ├── contact.html           # Formulaire ou informations de contact
+│   ├── cv.html                # Présentation du CV
+│   ├── entreprise.html        # Expérience en entreprise
+│   ├── projet.html            # Liste des projets réalisés
+│   └── veille_technolo.html   # Page de veille technologique
+│
+├── cv/                        # Contient le CV en PDF
+│   └── DaveIsraelcv.pdf
+│
+├── doc/                       # Documentation générale du projet
+│   ├── folder_doc/            # Documentation technique (structure du projet, explication)
+│   ├── installation_vm.pdf    # Instructions pour l’installation d’une machine virtuelle
+│   └── *.pdf                  # Futurs documents projets
+│
+├── images/                    # Ressources visuelles utilisées dans le site
+│
+├── style/                     # Feuilles de style CSS
+│   ├── accueil.css            # Spécifique à la page d’accueil
+│   ├── header.css             # Style de la barre de navigation
+│   ├── footer.css             # Style du pied de page
+│   ├── projet.css             # Style des pages projet
+│   └── style.css              # Style commun à tout le site
+│
+├── index.html                 # Page d’entrée du site / gère le routage dynamique via JS
+├── readme.md                  # Documentation générale du projet (ce fichier)
+└── text.txt                   # Fichier temporaire, inutile
+```
 
-Projets → mes projets (8 cartes, images, description).
+---
 
-Veille technologique → recherches et expérimentations.
+## 📄 Détail des fichiers importants
 
-Contact → coordonnées et moyens de me joindre.
+### `index.html`
 
-J’ai construit ce portfolio avec HTML, CSS, JavaScript et Materialize, pour que tout soit clair, responsive et facile à parcourir
+Ce fichier sert de **point d’entrée principal** au projet. Il contient :
 
+* Le chargement des bibliothèques (Bootstrap, Font Awesome, AOS, etc.)
+* Un script JavaScript permettant de charger dynamiquement les **pages HTML** depuis le dossier `View/`, en fonction du paramètre d’URL (`?page=...`)
+* L'inclusion du `header` et du `footer` (chargés depuis `View/commun/`)
 
+Cette approche permet d’éviter les duplications de code et facilite la mise à jour des composants communs (comme la navigation ou le footer).
 
-🧱 Base : gris-noir foncé, moderne
+### `View/commun/header.html`
 
-Fond principal (gris noir) : #1E1E1E
+Ce fichier représente la **barre de navigation principale** du site. Elle utilise **Bootstrap** pour être responsive, et contient des liens dynamiques redirigeant vers les différentes pages du site via `index.html?page=...`.
 
-Secondaire (gris profond) : #2B2B2B
+Liste des liens de navigation :
 
-Surface claire (pour contraste) : #F2F2F2
+* Intro
+* BTS SIO
+* Entreprise
+* Projets
+* CV
+* Veille Technologique
+* Contact
 
-🔹 Accents (Bleus froids et neutres)
+### `View/commun/footer.html`
 
-Accent principal (bleu pétrole foncé) : #0A84AE
+Le **footer** est un composant commun affiché sur toutes les pages. Il contient :
 
-Accent doux (bleu gris clair) : #89A7B1
+* Un copyright
+* Des liens vers les réseaux sociaux (GitHub, LinkedIn)
+* Un lien vers le CV en PDF
 
-Accent hover / clair (bleu grisé désaturé) : #A1BCCF
+Il est stylisé via `style/footer.css`.
 
-✏️ Textes
+---
 
-Texte principal (sur fond foncé) : #E4E4E4
+## 📌 Organisation et bonnes pratiques
 
-Texte secondaire : #B0B0B0
+* **Séparation claire des responsabilités** : CSS, HTML, images, scripts et documentation sont chacun dans un dossier dédié.
+* **Réutilisabilité** : Le `header` et le `footer` sont partagés entre toutes les pages, via chargement JavaScript.
+* **Extensibilité** : De nouvelles pages peuvent être ajoutées facilement en les plaçant dans le dossier `View/` et en ajoutant leur nom à la liste `allowedPages` dans le script de `index.html`.
+* **Structure modulaire** : L’organisation du projet est inspirée d’un modèle **MVC simplifié**, où :
 
-Texte sur fond clair : #1C1C1C
+  * `View/` représente les **vues** (pages HTML)
+  * `Controller/` et `Models/` sont présents par convention mais non utilisés (seront supprimés)
 
-🧠 Pourquoi cette palette fonctionne :
+---
 
-Contraste propre sans agressivité
+## 🛠️ À venir / Nettoyage prévu
 
-Bleus froids pour un côté tech, pro, propre
+* ❌ Suppression des dossiers **Controller/** et **Models/** qui ne sont pas utilisés
+* ✅ Ajout de nouvelles documentations PDF dans `doc/` au fur et à mesure des projets
 
-Gris neutres profonds pour rester élégant
+---
 
-Aucune couleur flashy / criarde / dégueulasse
+## ✅ Conclusion
 
-Compatible avec Bootstrap, Figma, Tailwind, etc.
+Ce projet est conçu pour rester **simple**, **modulaire** et facilement **compréhensible**, que ce soit pour travailler en collaboration ou pour être présenté dans un cadre scolaire ou professionnel. La structure permet une **bonne évolutivité**, tout en conservant une **organisation claire et propre**.
+
+---
