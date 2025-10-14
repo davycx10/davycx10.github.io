@@ -1,62 +1,59 @@
-# davycx10.github.io
+# Portfolio BTS SIO – Davy CX
 
-Bonjour !
-Je suis actuellement étudiant en BTS SIO (SLAM/SISR) en alternance. J’ai choisi ce cursus parce que j’aime l’informatique et que je souhaite travailler dans le développement objet, les systèmes embarqués ou le développement cloud.
+Bienvenue sur mon portfolio disponible à l’adresse :  
+🔗 [https://davycx10.github.io](https://davycx10.github.io)
 
-J’ai réalisé ce portfolio dans le cadre d’une épreuve, pour présenter mes compétences et mes réalisations. Voici comment il est structuré :
+Ce site a été réalisé dans le cadre du **BTS SIO (Services Informatiques aux Organisations)** que je poursuis en alternance, avec une spécialisation **SLAM **. Il me permet de présenter mon parcours, mes compétences, mes projets, ainsi que mon activité en entreprise.
 
-Accueil / Intro → page personnelle, qui tu es, ton parcours.
+---
 
-BTS SIO → page principale avec deux sous-onglets :
+## 🎯 Objectifs du projet
 
-Option SLAM → explication de ce que c’est, à quoi ça sert, debouché possible
+- Créer un portfolio personnel complet
+- Structurer les informations importantes liées à ma formation et à mes projets
+- Mettre en pratique mes compétences en développement web
+- Présenter mes travaux de façon claire, responsive et professionnelle
 
-Option SISR → explication de ce que c’est, à quoi ça sert, debouché possible
+---
 
-Entreprise → ce que je fais en alternance, missions, projets.
+## 🛠️ Technologies utilisées
 
-Projets → mes projets (8 cartes, images, description).
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Bootstrap 5**
 
-Veille technologique → recherches et expérimentations.
+Le site est entièrement responsive et adapté à tous les types d’écrans.
 
-Contact → coordonnées et moyens de me joindre.
+---
 
-J’ai construit ce portfolio avec HTML, CSS, JavaScript et Materialize, pour que tout soit clair, responsive et facile à parcourir
+## 🧭 Structure du site
 
+Le portfolio se compose des pages suivantes :
 
+- **Accueil** : Introduction, présentation personnelle
+- **BTS SIO** : Présentation du diplôme et des deux options
+  - Option **SLAM** : Développement d'applications
+  - Option **SISR** : Réseaux et systèmes
+- **Entreprise** : Missions et projets réalisés en alternance
+- **Projets** : Galerie de projets (8 cartes avec images + descriptions)
+- **Veille Technologique** : Sujets explorés et recherches personnelles
+- **Contact** : Formulaire de contact et informations de contact
 
-🧱 Base : gris-noir foncé, moderne
+---
 
-Fond principal (gris noir) : #1E1E1E
+## 🚀 Déploiement
 
-Secondaire (gris profond) : #2B2B2B
+Le site est hébergé sur **GitHub Pages** via ce dépôt.  
+🔗 [https://davycx10.github.io](https://davycx10.github.io)
 
-Surface claire (pour contraste) : #F2F2F2
+---
 
-🔹 Accents (Bleus froids et neutres)
+## 📌 À propos
 
-Accent principal (bleu pétrole foncé) : #0A84AE
+Auteur : **davycx**  
+Formation : **BTS SIO **  
+Ce projet est réalisé dans un but pédagogique et professionnel.
 
-Accent doux (bleu gris clair) : #89A7B1
+---
 
-Accent hover / clair (bleu grisé désaturé) : #A1BCCF
-
-✏️ Textes
-
-Texte principal (sur fond foncé) : #E4E4E4
-
-Texte secondaire : #B0B0B0
-
-Texte sur fond clair : #1C1C1C
-
-🧠 Pourquoi cette palette fonctionne :
-
-Contraste propre sans agressivité
-
-Bleus froids pour un côté tech, pro, propre
-
-Gris neutres profonds pour rester élégant
-
-Aucune couleur flashy / criarde / dégueulasse
-
-Compatible avec Bootstrap, Figma, Tailwind, etc.
