@@ -36,7 +36,7 @@ Le portfolio se compose des pages suivantes :
   - Option **SLAM** : Développement d'applications
   - Option **SISR** : Réseaux et systèmes
 - **Entreprise** : Missions et projets réalisés en alternance
-- **Projets** : Galerie de projets (8 cartes avec images + descriptions)
+- **Projets** : Galerie de projets (cartes avec images + descriptions)
 - **Veille Technologique** : Sujets explorés et recherches personnelles
 - **Contact** : Formulaire de contact et informations de contact
 
