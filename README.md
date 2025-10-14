@@ -106,12 +106,6 @@ Il est stylisé via `style/footer.css`.
 
 ---
 
-## 🛠️ À venir / Nettoyage prévu
-
-* ❌ Suppression des dossiers **Controller/** et **Models/** qui ne sont pas utilisés
-* ✅ Ajout de nouvelles documentations PDF dans `doc/` au fur et à mesure des projets
-
----
 
 ## ✅ Conclusion
 
