@@ -16,7 +16,7 @@ Ce site a été réalisé dans le cadre du **BTS SIO (Services Informatiques aux
 
 ---
 
-## 🛠️ Technologies utilisées
+##  Technologies utilisées
 
 - **HTML5**
 - **CSS3**
@@ -27,7 +27,7 @@ Le site est entièrement responsive et adapté à tous les types d’écrans.
 
 ---
 
-## 🧭 Structure du site
+##  Structure du site
 
 Le portfolio se compose des pages suivantes :
 
@@ -49,7 +49,7 @@ Le site est hébergé sur **GitHub Pages** via ce dépôt.
 
 ---
 
-## 📌 À propos
+##  À propos
 
 Auteur : **davycx**  
 Formation : **BTS SIO **  
